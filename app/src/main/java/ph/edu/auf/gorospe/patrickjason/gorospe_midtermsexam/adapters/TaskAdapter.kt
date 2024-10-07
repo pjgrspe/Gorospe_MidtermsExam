@@ -36,7 +36,7 @@ class TaskAdapter(private val tasks: ArrayList<TasksModel>) : RecyclerView.Adapt
             with(tasks[position]) {
                 binding.tvTaskTitle.text = "Task #${this.taskNo}"
                 binding.tvTaskDescription.text = this.taskDescription
-                binding.tvTaskDate.text = SimpleDateFormat("MMM dd, yyyy", Locale.getDefault()).format(this.taskDateTime)
+                binding.tvTaskDate.text = SimpleDateFormat("MMM dd, yyyy HH:mm a EEEE", Locale.getDefault()).format(this.taskDateTime)
             }
         }
     }
