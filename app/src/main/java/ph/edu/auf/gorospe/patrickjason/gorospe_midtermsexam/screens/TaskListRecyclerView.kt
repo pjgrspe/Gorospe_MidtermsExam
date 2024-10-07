@@ -28,10 +28,6 @@ class TaskListRecyclerView: AppCompatActivity() {
         setContentView(binding.root)
 
         taskList = arrayListOf(
-            TasksModel(TasksModel.getNextTaskNo(), "Desc 1", Date()),
-            TasksModel(TasksModel.getNextTaskNo(), "Desc 2", Date()),
-            TasksModel(TasksModel.getNextTaskNo(), "Desc 3", Date()),
-            TasksModel(TasksModel.getNextTaskNo(), "Desc 4", Date()),
         )
 
         val layoutManager = LinearLayoutManager(this)
